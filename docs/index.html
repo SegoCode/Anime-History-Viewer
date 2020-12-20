@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Anime History Viewer</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+    <html>
+
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+      </head>
+
+      <body>
+        <div class="container">
+          <textarea placeholder="Kimetsu no Yaiba&#10;Sword Art Online&#10;Darling in the FranXX&#10; . . . " id="animeListArea" rows="10" cols="90"></textarea>
+        </div>
+        <button class="expand-button" onclick="loadTable();">Load table</button>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Title</th>
+              <th scope="col">Community score</th>
+              <th scope="col">MyAnimelist link</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td colspan="3">(。O⁄ ⁄ω⁄ ⁄ O。)</td>
+            </tr>
+          </tfoot>
+          <tbody id="dataTable">
+            <!-- JS inster data here -->
+          </tbody>
+        </table>
+
+      </body>
+
+    </html>
+    <!-- partial -->
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+
+</html>
