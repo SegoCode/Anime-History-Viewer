@@ -3,6 +3,8 @@ function loadTable() {
   var table = document.getElementById("dataTable");
   var lines = document.getElementById("animeListArea").value.split("\n");
   for (var line = 0; line < lines.length; line++) {
+    //Bypass cors policy
+    await new Promise(r => setTimeout(r, 500));
     axios.get('https://api.jikan.moe/v3/search/anime?q=' + lines[line])
       .then(function(response) {
         console.log(response.data.results[0]);
