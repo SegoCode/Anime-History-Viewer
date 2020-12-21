@@ -1,4 +1,4 @@
-function loadTable() {
+async function loadTable() {
   var axios = window.axios;
   var table = document.getElementById("dataTable");
   var lines = document.getElementById("animeListArea").value.split("\n");
