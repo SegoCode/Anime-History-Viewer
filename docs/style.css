@@ -1,9 +1,4 @@
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+*{
   font-family: 'Nunito', sans-serif;
 }
 
@@ -12,12 +7,9 @@
   justify-content: center;
 }
 
-
-
 .expand-button {
   cursor: pointer;
-  display: block;
-  width: 20%;
+  display: flex;
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -32,8 +24,11 @@ textarea {
   font-size: 15px;
 }
 
-table {
-  max-width: 960px;
+table,
+textarea,
+button{
+  width: 50%;
+  max-width:50%;
   margin: 10px auto;
 }
 
