@@ -1,5 +1,6 @@
 async function loadTable() {
   var axios = window.axios;
+  document.getElementById("shareButton").style.display = "";
   var table = document.getElementById("dataTable");
   var lines = document.getElementById("animeListArea").value.split("\n");
   for (var line = 0; line < lines.length; line++) {
@@ -20,4 +21,14 @@ async function loadTable() {
       });
 
   }
+}
+
+function share(){
+  const tmpObj = document.createElement('textarea');
+  tmpObj.value = "Not supported yet";
+  document.body.appendChild(tmpObj);
+  tmpObj.select();
+  document.execCommand('copy');
+  document.body.removeChild(tmpObj);
+	
 }
