@@ -2,17 +2,15 @@
   font-family: 'Nunito', sans-serif;
 }
 
-.container {
+textarea {
   display: flex;
-  justify-content: center;
+  font-size: 15px;
 }
 
-.expand-button {
+button {
   cursor: pointer;
   display: flex;
   margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #f4f7f8;
   color: black;
   font-size: 1rem;
@@ -20,9 +18,6 @@
 
 }
 
-textarea {
-  font-size: 15px;
-}
 
 table,
 textarea,
@@ -32,11 +27,6 @@ button{
   margin: 10px auto;
 }
 
-caption {
-  font-size: 1.6em;
-  font-weight: 400;
-  padding: 10px 0;
-}
 
 thead th {
   font-weight: 400;
