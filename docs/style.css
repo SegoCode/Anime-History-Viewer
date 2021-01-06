@@ -1,5 +1,12 @@
-*{
+* {
   font-family: 'Nunito', sans-serif;
+}
+
+.footer {
+  position: fixed;
+  right: 0px;
+  bottom: -5px;
+  z-index: -1;
 }
 
 textarea {
@@ -8,41 +15,40 @@ textarea {
 }
 
 button {
-  cursor: pointer;
-  display: flex;
-  margin-top: 1rem;
-  background-color: #f4f7f8;
-  color: black;
-  font-size: 1rem;
-  padding: 0.5rem;
-
+  display: block;
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 20px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #F6F4F5;
 }
 
 
 table,
 textarea,
-button{
+button {
   width: 50%;
-  max-width:50%;
+  min-width: 600px;
   margin: 10px auto;
 }
 
 
 thead th {
   font-weight: 400;
-  background: #8a97a0;
+  background: #6C90CC;
   color: #FFF;
 }
 
 tr {
-  background: #f4f7f8;
+  background: #F6F4F5;
   border-bottom: 1px solid #FFF;
   margin-bottom: 5px;
 }
 
-tr:nth-child(even) {
-  background: #e8eeef;
-}
 
 th,
 td {
