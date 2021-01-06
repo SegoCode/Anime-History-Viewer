@@ -15,6 +15,7 @@ textarea {
 }
 
 button {
+  cursor: pointer;
   display: block;
   border: 0;
   outline: none;
