@@ -18,10 +18,10 @@
         <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
       </head>
 
-      <body>
-        <textarea placeholder="Kimetsu no Yaiba&#10;Sword Art Online&#10;Darling in the FranXX&#10; . . . " id="animeListArea" rows="10" cols="90"></textarea>
-        <button onclick="loadTable();">Load table</button>
-		<button id="shareButton" style="display:none;" onclick="share();">Copy share link</button>
+      <body onload="loadView();">
+        <textarea id="animeListArea" placeholder="Kimetsu no Yaiba&#10;Sword Art Online&#10;Darling in the FranXX&#10; . . . " rows="10" cols="90"></textarea>
+        <button id="loadButton" onclick="loadTable();">Load to table</button>
+        <button id="shareButton" style="display:none;" onclick="share();">Copy share link</button>
 
         <table>
           <thead>
@@ -34,14 +34,16 @@
           </thead>
           <tfoot>
             <tr>
-              <td colspan="3">(。O⁄ ⁄ω⁄ ⁄ O。)</td>
+              <td id="footerText" colspan="3"></td>
             </tr>
           </tfoot>
           <tbody id="dataTable">
             <!-- JS inster data here -->
           </tbody>
         </table>
-
+        <div class="footer">
+          <img src="" alt="AxisClub">
+        </div>
       </body>
 
     </html>
