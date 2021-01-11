@@ -49,7 +49,7 @@ function loadView() {
 
 function share() {
   const tmpObj = document.createElement('textarea');
-  var urlShare = window.location.hostname + window.location.pathname + "?share=" + utf8_to_b64(GetCellValues());
+  var urlShare = "https://"+ window.location.hostname + window.location.pathname + "?share=" + utf8_to_b64(GetCellValues());
   tmpObj.value = urlShare;
   document.body.appendChild(tmpObj);
   tmpObj.select();
