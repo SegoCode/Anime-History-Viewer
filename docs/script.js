@@ -12,7 +12,7 @@ async function loadTable() {
   var lines = document.getElementById("animeListArea").value.split("\n");
   for (var line = 0; line < lines.length; line++) {
     //Bypass "Too Many request"?
-    await new Promise(r => setTimeout(r, 500));
+    await new Promise(r => setTimeout(r, 300));
 
     axios.get('https://api.jikan.moe/v3/search/anime?q=' + lines[line])
       .then(function(response) {
