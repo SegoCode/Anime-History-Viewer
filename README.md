@@ -6,7 +6,7 @@ Simple, copy, paste your animes and share, simply an alternative to anime list s
 ## Usage & info
 Under the hood this web work whith [jikan API](https://jikan.moe/) so there some things to keep in mind: 
 
-- Rate Limiting Per Minute 60 requests (May be the animes load slow )
+- Rate limiting per minute 60 requests (May be the animes load slow)
 - Doesn't have backend, so when it shared all information need to stay in URL, (I recommend you use a link shortener)
 
 ## Deploy 
