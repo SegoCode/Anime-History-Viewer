@@ -10,6 +10,11 @@ async function loadTable() {
   var table = document.getElementById("dataTable");
   var footerText = document.getElementById("footerText");
   var lines = document.getElementById("animeListArea").value.split("\n");
+
+  if(table.hasChildNodes){
+    table.innerHTML = "";
+  }
+  
   for (var line = 0; line < lines.length; line++) {
     //Bypass "Too Many request"?
     await new Promise(r => setTimeout(r, 300));
