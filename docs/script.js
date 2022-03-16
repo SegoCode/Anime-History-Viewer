@@ -15,18 +15,18 @@ async function loadTable() {
     table.innerHTML = "";
   }
   
-  for (var line = 0; line < lines.length; line++) {
-    //Bypass "Too Many request"?
-    await new Promise(r => setTimeout(r, 300));
-
-    axios.get('https://api.jikan.moe/v3/search/anime?q=' + lines[line])
+   for (var line = 0; line < lines.length; line++) {
+    //Bypass "Too Many request"
+    await new Promise(r => setTimeout(r, 4000));
+	
+    await axios.get('https://api.jikan.moe/v4/anime?q=' + lines[line] +'&sfw')
       .then(function(response) {
-        //console.log(response.data.results[0]);
+        console.log(response.data.data[0].title);
         var newRow = table.insertRow(table.length);
-        newRow.insertCell(0).innerHTML = "<img src='" + response.data.results[0].image_url + "'/>";
-        newRow.insertCell(1).innerHTML = response.data.results[0].title;
-        newRow.insertCell(2).innerHTML = response.data.results[0].score;
-        newRow.insertCell(3).innerHTML = "<a target='_blank' href='" + response.data.results[0].url + "'>Show in MyAnimeList</a>";
+        newRow.insertCell(0).innerHTML = "<img src='" + response.data.data[0].images.jpg.image_url + "'/>";
+        newRow.insertCell(1).innerHTML = response.data.data[0].title;
+        newRow.insertCell(2).innerHTML = response.data.data[0].score;
+        newRow.insertCell(3).innerHTML = "<a target='_blank' href='" +response.data.data[0].url + "'>Show in MyAnimeList</a>";
 
         footerText.innerHTML = "Animes: " + (table.rows.length) + "  (。O⁄ ⁄ω⁄ ⁄ O。)";
       })
