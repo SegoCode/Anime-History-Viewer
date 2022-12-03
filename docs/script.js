@@ -15,7 +15,7 @@ async function loadTable() {
     table.innerHTML = "";
   }
   
-   for (var line = 0; line < lines.length; line++) {
+   for (var line = 0; line < lines.length-1; line++) {
     //Bypass "Too Many request"
     await new Promise(r => setTimeout(r, 1000));
 	
