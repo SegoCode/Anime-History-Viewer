@@ -1,15 +1,14 @@
 # Anime History Viewer
 <img src="https://github.com/SegoCode/Anime-History-Viewer/blob/main/media/demo.png">
 
-Simple, copy, paste your animes and share, simply an alternative to anime list services like [MyAnimeList](https://myanimelist.net/) or [anilist](https://anilist.co/), if you have an animesCompleted.txt and you dont want have an account in these services just for share your animes one time a year with your friend, this fix this.
+Simple web that allows you to share your anime history with others without the need for an account on a service like [MyAnimeList](https://myanimelist.net/) or [anilist]. This is useful if you want to share your anime history with a friend or group and don't want to create an account on one of these services just for that purpose.
 
-## Usage & info
-Under the hood this web work whith [jikan API](https://jikan.moe/) so there some things to keep in mind: 
+To use the app, you will need a ``animesCompleted.txt`` file containing a list of the anime you have completed. Simply copy and paste the contents of this file into the app, and it will retrieve information about each anime from the Jikan API and display it in a visually appealing way.
 
-- Rate limiting per minute 60 requests (May be the animes load slow).
-- Doesn't have backend, so when it shared all information need to stay in URL (I recommend you use a link shortener).
-- All searches are made in relation to the title registered in [Myanimelist](https://myanimelist.net/) any entry need to be similar.
+There are a few things to keep in mind when using this app:
 
-## Deploy 
+- The app has a rate limit of 60 requests per minute, which may cause the anime to load slowly depending on the size of your list.
+- The app does not have a backend, so all information is stored in the URL. We recommend using a link shortener to share your anime history with others.
+- The app uses the anime titles registered on Myanimelist, so your entries must match the titles on that platform in order for the app to work properly.
 
-https://segocode.github.io/Anime-History-Viewer/
+To access the app, simply visit https://segocode.github.io/Anime-History-Viewer/. From there, you can paste your animesCompleted.txt file and share your anime history with others.
