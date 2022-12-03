@@ -17,7 +17,7 @@ async function loadTable() {
   
    for (var line = 0; line < lines.length; line++) {
     //Bypass "Too Many request"
-    await new Promise(r => setTimeout(r, 3000));
+    await new Promise(r => setTimeout(r, 1000));
 	
     await axios.get('https://api.jikan.moe/v4/anime?q=' + lines[line] +'&sfw')
       .then(function(response) {
