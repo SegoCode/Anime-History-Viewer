@@ -11,4 +11,4 @@ There are a few things to keep in mind when using this app:
 - The app does not have a backend, so all information is stored in the URL. We recommend using a link shortener to share your anime history with others.
 - The app uses the anime titles registered on Myanimelist, so your entries must match the titles on that platform in order for the app to work properly.
 
-To access the app, simply visit https://segocode.github.io/Anime-History-Viewer/. From there, you can paste your animesCompleted.txt file and share your anime history with others.
+To access the app, simply visit https://segocode.github.io/Anime-History-Viewer/ From there, you can paste your "animes completed list" and share your anime history with others.
